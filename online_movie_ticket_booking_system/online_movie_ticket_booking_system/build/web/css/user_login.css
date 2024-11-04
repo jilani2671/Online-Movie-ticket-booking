@@ -1,0 +1,72 @@
+/* 
+    Document   : user_login
+    Created on : 16 Feb, 2023, 10:44:29 AM
+    Author     : Jilani
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+ body
+            {
+               background-image: url(images/denis.jpg);
+               background-size: cover;
+               background-repeat: no-repeat;
+            }
+            
+            .whitediv
+            {
+                height: 600px;
+                width: 500px;
+                margin-left: 10%;
+                margin-top: 2%;
+               
+                height: 500px;
+                
+
+             }
+            .h
+            {
+                font-size: 15px;
+                margin-left: 200px;
+                margin-top: 0.2px;
+                color: blue;
+
+            }
+
+            .box
+            {
+                height: 450px;
+                width: 400px;
+                background-color:#F8F9F9;
+                margin-top: 150px;
+                margin-left: 180px;
+                opacity: 100%;
+                border-radius:10px;
+            }
+            .textbox
+            {
+                height: 40px;
+                width: 300px;
+                border-radius: 10px;
+                margin-left: 50px;
+                margin-top: 40px;
+            }
+            .button
+            {
+                height: 40px;
+                width: 180px;
+                margin-top: 60px;
+                padding:10px;
+                background-color:#C84242;
+                color: white;
+                border-radius: 10px;
+                border: none;
+            }
+           input#go:hover
+            {
+                background-color: #515A5A  ;
+                 color: white
+            }

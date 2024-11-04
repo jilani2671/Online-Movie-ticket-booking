@@ -1,0 +1,41 @@
+/* 
+    Document   : user_profile
+    Created on : 16 Feb, 2023, 7:56:56 PM
+    Author     : Jilani
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body
+   {
+    background-image: url(images/denis.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+.whitediv
+{
+    height: 550px;
+    width: 550px;
+    background-color: #F8F9F9;
+    margin-left: 30%;
+    margin-top: 3%;   
+    border-radius:10px;
+}
+.textbox
+{
+    height:45px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4%;
+    border: none;
+    background-color: #EDF2F2;
+    border-radius:10px;
+}
+
+hr {
+  border-top: 1px solid grey;
+}
+

@@ -1,0 +1,88 @@
+/* 
+    Document   : admin_assistant
+    Created on : 16 Feb, 2023, 8:24:56 PM
+    Author     : Jilani
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body
+{
+    background-image: url(images/back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.moviediv
+{    
+    height: 320px;
+    width: 300px;
+    background-color: white;   
+}
+
+.image
+{ 
+    height: 200px;
+    width: 300px;
+    background-color: grey;
+}
+
+.button
+{
+    height: 40px;
+    width: 160px;
+    margin-left:20%;
+    margin-top:30%; 
+    border: none;
+    background-color: #717d7e; 
+    color:white;
+}
+
+.button1
+{
+    height: 40px;
+    width: 160px;
+    margin-left:25%;
+    margin-top:30%; 
+    border: none;
+    background-color: orange; 
+    color:white;
+}
+
+
+
+.whitediv
+{
+    height: 700px;
+    width: 650px;
+    background-color:white;
+    margin-left: 35%;
+    margin-top: 0;
+   
+}
+
+.textbox
+{
+    height: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: none;
+    background-color: whitesmoke;
+}
+.myclass
+{
+     margin-left: 7%;
+     margin-top: 7%;
+     font-size:130%; 
+}
+.myclass2
+{
+     margin-left: -30%;
+     margin-top: 00%; 
+}
+
+

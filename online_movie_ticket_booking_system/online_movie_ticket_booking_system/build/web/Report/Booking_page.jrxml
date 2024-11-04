@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Booking_page" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="921d7908-115b-4c7d-a968-6f4481117198">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     seat_bookings.`booking_id` AS seat_bookings_booking_id,
+     seat_bookings.`user_id` AS seat_bookings_user_id,
+     seat_bookings.`user_name` AS seat_bookings_user_name,
+     seat_bookings.`movie_id` AS seat_bookings_movie_id,
+     seat_bookings.`movie_name` AS seat_bookings_movie_name,
+     seat_bookings.`movie_image` AS seat_bookings_movie_image,
+     seat_bookings.`time` AS seat_bookings_time,
+     seat_bookings.`date` AS seat_bookings_date,
+     seat_bookings.`seat_no` AS seat_bookings_seat_no
+FROM
+     `seat_bookings` seat_bookings]]>
+	</queryString>
+	<field name="seat_bookings_booking_id" class="java.lang.Integer"/>
+	<field name="seat_bookings_movie_id" class="java.lang.Integer"/>
+	<field name="seat_bookings_movie_image" class="java.lang.String"/>
+	<field name="seat_bookings_seat_no" class="java.lang.Integer"/>
+	<field name="seat_bookings_user_name" class="java.lang.String"/>
+	<field name="seat_bookings_movie_name" class="java.lang.String"/>
+	<field name="seat_bookings_time" class="java.lang.String"/>
+	<field name="seat_bookings_date" class="java.lang.String"/>
+	<field name="seat_bookings_user_id" class="java.lang.Integer"/>
+	<group name="seat_bookings_booking_id">
+		<groupExpression><![CDATA[$F{seat_bookings_booking_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="21" width="800" height="1" uuid="46956cf7-7df8-4db4-ac1a-1210517c88af"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="467" y="0" width="160" height="20" uuid="9e860f1b-15e0-4158-bcb1-22ea374298d7"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="0" width="160" height="20" uuid="2d39f3b1-2156-4bf4-a966-e555a773caa5"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Movie Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="0" width="160" height="20" uuid="247edb08-1e2b-4a80-b854-38ddb13c7636"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[User Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="640" y="0" width="160" height="20" uuid="f8fd975d-c4af-4508-84e0-46a356d057c5"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="160" height="20" uuid="b8ee74e4-fd6f-4035-a7ad-b9fb8ed80afb"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="40" width="802" height="1" uuid="b5f58cdd-44eb-44f2-a252-a55548e686e1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<textField>
+				<reportElement x="480" y="0" width="160" height="20" uuid="c8e1f0b0-187c-442c-9036-5a5d7e942e9a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{seat_bookings_time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="160" height="20" uuid="54eca556-2e66-4ce6-89ea-0d211d029ca3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{seat_bookings_movie_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="160" height="20" uuid="41232e1f-5c78-4247-9171-489d98ae3235"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{seat_bookings_user_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="0" width="160" height="20" uuid="4cae7234-ea50-455c-a5fc-35c96d049fff"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{seat_bookings_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="160" height="20" uuid="9b1efdc8-1b0d-4f80-9056-01c8fcf34652"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{seat_bookings_user_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

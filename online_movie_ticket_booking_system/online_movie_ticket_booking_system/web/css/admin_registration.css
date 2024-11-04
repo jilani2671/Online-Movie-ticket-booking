@@ -1,0 +1,68 @@
+/* 
+    Document   : admin_registration
+    Created on : 9 May, 2023, 8:29:57 AM
+    Author     : Jilani
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+     background-image: url(images/denis.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+
+.whitediv
+{
+    height: 650px;
+    width: 650px;
+    background-color:#F8F9F9 ;
+    margin-left: 30%;
+    margin-top: 3%;
+    border-radius:10px;
+    
+}
+.textbox
+{
+    height:35px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4%;
+    border: none;
+    background-color:#EDF2F2;
+}
+
+
+.button
+{
+    height: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 7%;
+    border-radius:10px;
+    background-color:#C84242   ; 
+    color:white;
+    padding:15px;
+    
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+ 
+}
+hr {
+  border-top: 1px solid grey;
+}
+
+input#go:hover
+{
+  background-color: #515A5A  ;
+  color: white
+}

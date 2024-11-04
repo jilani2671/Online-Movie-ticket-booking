@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="payment_page" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="dbd904bc-f7eb-4419-8348-eba91e842d07">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     payment_page.`id` AS payment_page_id,
+     payment_page.`name` AS payment_page_name,
+     payment_page.`phone_no` AS payment_page_phone_no,
+     payment_page.`amount` AS payment_page_amount,
+     payment_page.`payment_method` AS payment_page_payment_method,
+     payment_page.`payment_no` AS payment_page_payment_no
+FROM
+     `payment_page` payment_page]]>
+	</queryString>
+	<field name="payment_page_id" class="java.lang.Integer"/>
+	<field name="payment_page_name" class="java.lang.String"/>
+	<field name="payment_page_phone_no" class="java.lang.Long"/>
+	<field name="payment_page_amount" class="java.lang.Long"/>
+	<field name="payment_page_payment_method" class="java.lang.String"/>
+	<field name="payment_page_payment_no" class="java.lang.String"/>
+	<group name="payment_page_id">
+		<groupExpression><![CDATA[$F{payment_page_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="324" y="25" width="161" height="43" forecolor="#990066" uuid="4c900a17-08b8-489d-b9a8-58c59421f874"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Payment Page]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="13" width="806" height="1" uuid="f7fddc51-8f94-449b-bb59-c35b817a8f2b"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="133" height="20" uuid="99461611-f5bd-4d00-9403-7bef8e8710a1"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="0" width="133" height="20" uuid="f58a0605-142b-456a-ba30-ecad54c800bf"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="266" y="0" width="133" height="20" uuid="7d69e862-6df5-408b-8dde-ca9b8545421a"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Phone No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="399" y="0" width="133" height="20" uuid="cca14f23-cc8c-4726-acd5-f47fd05302db"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="532" y="0" width="133" height="20" uuid="da3d8c60-ef98-482c-8b0e-2706794bc588"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Payment Method]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="665" y="0" width="133" height="20" uuid="6760fba6-a6f9-4dbe-95a4-11e6af1bc36f"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Payment No]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="35" width="802" height="1" uuid="670deafe-5547-4b39-b3b9-1e641eda740d"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="57" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="133" height="20" uuid="6587c7e7-863a-4f48-ac8d-4607711e3e7c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{payment_page_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="0" width="133" height="20" uuid="39eaa97a-eee1-4a21-8fb0-6d5e499feb51"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{payment_page_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="266" y="0" width="133" height="20" uuid="26e2d83c-1397-48f0-a881-0b16ea7095d1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{payment_page_phone_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="399" y="0" width="133" height="20" uuid="4f57684c-4f9c-4536-a01c-97fc2ea8730f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{payment_page_amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="532" y="0" width="133" height="20" uuid="fa1f088d-0541-4301-a3cc-bda3c59ec2c2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{payment_page_payment_method}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="665" y="0" width="133" height="20" uuid="8bfb3791-0fba-43b4-87d7-64993a9f60a3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{payment_page_payment_no}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

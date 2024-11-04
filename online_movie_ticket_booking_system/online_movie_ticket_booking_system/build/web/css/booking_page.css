@@ -1,0 +1,97 @@
+/* 
+    Document   : booking_page
+    Created on : 16 Feb, 2023, 8:18:01 PM
+    Author     : Jilani
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.whitediv
+        {
+            height: 730px;
+            width: 700px;
+            background-color: #F8F9F9;
+            margin-left: 35%; 
+            margin-top: -10px;
+            border-radius:10px;
+        }
+
+.imagediv{
+            height: 200px;
+            width: 300px;
+            background-color: red;
+            margin-left: 195px;
+        }
+.imagediv1{
+            height: 150px;
+            width: 300px;
+            background-color:white;
+            margin-left: 115px;
+        }
+
+ .image1{
+            height: 200px;
+            width: 300px;
+            margin-left: 00px; 
+        }
+ .myclass{
+           margin-top: 35px;    
+           margin-left: 50px;
+           font-size: 100%;
+        }
+.button{
+         margin-top: 70px;
+         margin-left: 70px;
+         height:35px; 
+         width: 170px;
+         border-radius:5px;
+         background-color: #717d7e;
+         color:white;
+        }       
+   
+.button1{
+         margin-top: 70px;
+         margin-left: 70px;
+         height:35px; 
+         width: 170px;
+         border-radius:5px;
+         background-color: #C84242;
+         color:white;
+        }     
+.button2{
+         margin-top: 00px;
+         margin-left: 00px;
+         height: 15px; 
+         width: 5px;
+         background-color: transparent;
+        }    
+           
+.textbox1
+        {
+            height: 25px;
+            width: 100px;
+            background-color: #EDF2F2;
+            margin-left: 00%; 
+            margin-top: 00px;
+            border-radius:2px;
+        }
+ 
+ body
+     {
+         background-image: url(images/denis.jpg);
+         background-size: cover;
+         background-repeat: no-repeat;
+     }
+input#go:hover
+{
+  background-color: #515A5A  ;
+  color: white
+}
+input#go1:hover
+{
+  background-color: #967D7D  ;
+  color: white
+}

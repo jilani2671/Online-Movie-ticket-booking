@@ -1,0 +1,38 @@
+/* 
+    Document   : admin_home
+    Created on : 26 Mar, 2023, 2:09:44 PM
+    Author     : Jilani
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body
+{
+     background-image: url(images/denis.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.whitediv
+{
+    height: 650px;
+    width: 650px;
+    background-color:#F8F9F9 ;
+    margin-left: 40%;
+    margin-top: 3%;
+    border-radius:10px;
+    
+}
+hr 
+{
+  border-top: 1px solid grey;
+}
+img {
+  width: 650px;
+  height: 400px;
+ margin-top:-20px;
+}
+

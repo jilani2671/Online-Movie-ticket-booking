@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="admin_assistant" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e5032d91-e8c2-452e-98cb-8450f9d54d09">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     admin_assistant.`id` AS admin_assistant_id,
+     admin_assistant.`movie_name` AS admin_assistant_movie_name,
+     admin_assistant.`casting` AS admin_assistant_casting,
+     admin_assistant.`release_date` AS admin_assistant_release_date,
+     admin_assistant.`info` AS admin_assistant_info,
+     admin_assistant.`add_movie` AS admin_assistant_add_movie
+FROM
+     `admin_assistant` admin_assistant]]>
+	</queryString>
+	<field name="admin_assistant_id" class="java.lang.Integer"/>
+	<field name="admin_assistant_movie_name" class="java.lang.String"/>
+	<field name="admin_assistant_casting" class="java.lang.String"/>
+	<field name="admin_assistant_release_date" class="java.lang.String"/>
+	<group name="admin_assistant_id">
+		<groupExpression><![CDATA[$F{admin_assistant_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="307" y="25" width="156" height="39" forecolor="#990033" uuid="be5945ce-daa8-4b63-9093-79d55855b7d2"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Admin Assistant]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="10" width="802" height="1" uuid="eb0f93d6-40e6-4940-8b04-f63cc2f91782"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="200" height="20" uuid="79f0218a-8793-401f-b140-006895aefc39"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="200" height="20" uuid="f6eb7905-b8ad-44c0-84be-fb6a3463ff24"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Movie Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="200" height="20" uuid="d4533132-da91-4e39-92db-3f21b62b96c5"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Casting]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="0" width="200" height="20" uuid="5fe8a291-7748-455d-83f6-27215964b718"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Release Date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="39" width="802" height="1" uuid="4501e941-a110-40f6-9f5e-e593782d0c47"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="200" height="20" uuid="40cd91a0-a7a0-4d1b-aba1-4d67a43afda2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{admin_assistant_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="200" height="20" uuid="510add35-dadf-44fa-b2be-e24377b6300a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{admin_assistant_movie_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="200" height="20" uuid="de35471f-c42b-4191-8f1e-218ed0cb207c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{admin_assistant_casting}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="0" width="200" height="20" uuid="af69c157-95b1-4554-9c4c-bab157c79b83"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{admin_assistant_release_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

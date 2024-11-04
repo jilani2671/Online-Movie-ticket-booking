@@ -1,0 +1,41 @@
+/* 
+    Document   : home_page
+    Created on : 16 Feb, 2023, 8:06:50 PM
+    Author     : Jilani
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body
+{
+    background-image: url(images/back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.moviediv
+{    
+    height: 320px;
+    width: 300px;
+    background-color: whitesmoke;   
+}
+
+.image
+{ 
+    height: 200px;
+    width: 300px;
+    background-color: grey;
+}
+
+.button
+{
+    height: 21px;
+    width: 25%;
+    margin-left:70%;
+    border: none;
+    background-color: orange; 
+    color:white;
+}

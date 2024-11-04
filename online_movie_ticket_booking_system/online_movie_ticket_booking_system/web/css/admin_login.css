@@ -1,0 +1,58 @@
+/* 
+    Document   : admin_login
+    Created on : 16 Feb, 2023, 8:21:23 PM
+    Author     : Jilani
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body
+{
+    background-image: url(images/abcd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.whitediv
+{
+    height: 520px;
+    width: 550px;
+    background-color:#F8F9F9;
+    margin-left: 10%;
+    margin-top: 8%;
+    border-radius:10px;
+   
+}
+.textbox
+{
+    height: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color:white;
+    border-radius:10px;
+}
+
+
+.button
+{
+    height: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border: none;
+    background-color: #C84242; 
+    color:white;
+    border-radius:10px;
+}
+.button:active {
+    background-color: black;
+}
+hr {
+  border-top: 1px solid grey;
+}
+

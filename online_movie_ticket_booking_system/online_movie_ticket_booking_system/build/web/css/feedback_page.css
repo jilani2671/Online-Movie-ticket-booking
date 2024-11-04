@@ -1,0 +1,75 @@
+/* 
+    Document   : feedback_page
+    Created on : 16 Feb, 2023, 8:13:45 PM
+    Author     : Jilani
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+ body
+   {
+     background-image: url(images/denis.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+            
+
+.whitediv
+{
+    height: 650px;
+    width: 650px;
+    background-color:#F8F9F9 ;
+    margin-left: 40%; 
+    font-size:120%; 
+      border-radius:10px;
+}
+.textbox
+{
+ height:100px;
+ width:80%;
+ margin-left: 10%;
+ margin-top: 2%;
+ border-radius:10px;
+    
+}
+.button
+{
+    height: 50px;
+    width: 60%;
+    margin-left: 15%;
+    margin-top: 100%;
+    border: none;
+    background-color: #717d7e; 
+    color:white;
+    border-radius:10px;
+}
+.button1
+{
+    height: 50px;
+    width: 60%;
+    margin-left: 15%;
+    margin-top: 100%;
+    border: none;
+    background-color: #C84242 ; 
+    color:white;
+    border-radius:10px;
+}
+input#go2:hover
+{
+  background-color: #515A5A  ;
+  color: white
+}
+input#go1:hover
+{
+  background-color: #967D7D  ;
+  color: white
+}
+
+hr 
+{
+  border-top: 1px solid grey;
+}

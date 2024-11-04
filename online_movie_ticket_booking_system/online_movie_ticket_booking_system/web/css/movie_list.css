@@ -1,0 +1,34 @@
+/* 
+    Document   : movie_list
+    Created on : 25 Mar, 2023, 3:31:45 PM
+    Author     : Jilani
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+#search-bar{
+  float: left;
+}
+
+.viewbox {
+  float: right; 
+  }
+.clearfix
+{
+    clear: both;
+}
+.view {
+  display:inline-block;
+}
+
+/*listmodel*/
+.lst {
+  border-top: 1px solid black;
+    border-bottom: 1px solid #d1d1e0;
+  padding: 15px;
+}
+

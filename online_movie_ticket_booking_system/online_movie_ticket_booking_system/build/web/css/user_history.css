@@ -1,0 +1,53 @@
+/* 
+    Document   : user_history
+    Created on : 16 Feb, 2023, 8:10:35 PM
+    Author     : Jilani
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body
+   {
+        background-image: url(images/back1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;        
+   }
+            .whitediv
+            {
+                height: 650px;
+                width: 1100px;
+                margin-left: 350px;
+                margin-top: 50px;
+               background-color:white;  
+               
+            }
+            .img
+            {
+                background-image: url('images/bahubali.jpg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                height: 120px;
+                width: 120px;
+                margin-left:70px;
+                
+            }
+            .button
+            {
+               height: 50px;
+                width: 120%;
+                margin-left: 20%;
+                margin-top:80%;
+               background-color:grey;    
+            }
+            
+            .button1
+            {
+                height: 50px;
+                width: 120%;
+                margin-left: 170%;
+                margin-top: 80%;
+               background-color:orange;
+            }
